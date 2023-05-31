@@ -1,0 +1,47 @@
+/* media */
+@media (max-width: 700px) {
+    .casinos__card {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .casinos__btn {
+      width: 60%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .casinos .free-spins {
+      background-color: #DAECFE;
+    }
+    .casinos-tags {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 635px) {
+    .casinos__card {
+      justify-content: center;
+    }
+    .casinos__descr {
+      margin-right: 0;
+    }
+    .casinos-tags {
+      max-width: none;
+      margin: auto;
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 430px) {
+    .casinos-tags__button {
+      width: 100%;
+    }
+  }
+  @media (max-width: 380px) {
+    .casinos__card {
+      flex-direction: column;
+    }
+    .casinos__descr {
+      margin-top: 20px;
+      max-width: none;
+      width: auto;
+    }
+  }

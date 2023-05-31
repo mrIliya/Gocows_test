@@ -1,0 +1,310 @@
+/* main */
+.all {
+    background-color: #F9FAFA;
+  }
+  .all__top {
+    height: 10px;
+    width: 100%;
+    background-color: #0F0F0F;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1607843137);
+  }
+  .all__title {
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-family: "Roboto Bold";
+    font-weight: 700;
+    font-size: 28px;
+    margin: 40px 0 20px 0;
+  }
+  
+  .all-descr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+    margin-bottom: 20px;
+  }
+  .all-descr__title {
+    font-family: "Roboto Bold";
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .all-descr__total {
+    font-size: 14px;
+  }
+  
+  /* casinos */
+  .casinos {
+    padding-bottom: 20px;
+  }
+  .casinos__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 93px;
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 6px;
+  }
+  .casinos__card + li {
+    margin-top: 9px;
+  }
+  .casinos__card:hover .casinos__image {
+    opacity: 0.8;
+  }
+  .casinos__image {
+    width: 70px;
+    height: 46px;
+    margin-right: 15px;
+    transition: all ease-in 0.3s;
+  }
+  .casinos__logo {
+    width: 100%;
+    height: 100%;
+  }
+  .casinos__descr {
+    max-width: 233px;
+    width: 100%;
+    margin-right: 15px;
+  }
+  .casinos__new {
+    font-family: "Roboto Bold";
+    font-weight: 700;
+    font-size: 11px;
+    color: #68CB6C;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.1176470588);
+    border-radius: 4px;
+    width: 30px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .casinos__name {
+    font-size: 15px;
+    line-height: 18px;
+    color: #429BF4;
+    margin-bottom: 6px;
+  }
+  .casinos__rate {
+    display: flex;
+    align-items: center;
+  }
+  .casinos__flag {
+    width: 20px;
+    height: 14px;
+    margin-right: 8px;
+  }
+  .casinos__num {
+    margin-right: 6px;
+    color: #8F8F8F;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .casinos__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 30px;
+    background-color: #429BF4;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.55px;
+    transition: all ease-in 0.3s;
+  }
+  .casinos__btn:hover {
+    background-color: #3082D4;
+  }
+  .casinos__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 46px;
+    margin-top: 15px;
+    background-color: #fff;
+    border: 1px solid #429BF4;
+    border-radius: 23px;
+    color: #429BF4;
+    font-size: 14px;
+    transition: all ease-in 0.3s;
+  }
+  .casinos__more:hover {
+    background-color: #429BF4;
+    color: #fff;
+  }
+  
+  .casinos-stars {
+    width: 70px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .casinos-stars__star {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .casinos-tags {
+    max-width: 240px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  .casinos-tags__button {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .casinos-tags__tag {
+    display: inline-block;
+    min-height: 26px;
+    padding: 4px 20px;
+    background-color: #F3F3F3;
+    border-radius: 13px;
+    color: #5E6166;
+    font-size: 13px;
+  }
+  .casinos-tags .free-spins {
+    transition: all ease-in 0.3s;
+  }
+  .casinos-tags .free-spins:hover {
+    background-color: #DAECFE;
+  }
+  
+  .casinos-popup {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 304px;
+    background-color: #fff;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 6px;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+  }
+  .casinos-popup.active {
+    z-index: 55;
+    opacity: 1;
+  }
+  .casinos-popup__inner {
+    position: relative;
+    width: 100%;
+    padding: 16px 20px;
+  }
+  .casinos-popup__inner::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .casinos-popup__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+  }
+  .casinos-popup__title {
+    margin: 3px 0 17px 0;
+    font-family: "Roboto Bold";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .casinos-popup__clipboard {
+    position: relative;
+  }
+  .casinos-popup__copied {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 227px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 6px;
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+  }
+  .casinos-popup__copied.active {
+    z-index: 65;
+    opacity: 1;
+  }
+  .casinos-popup__copied::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 10px 15px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+  .casinos-popup__text {
+    color: #5E6166;
+    font-size: 13px;
+    line-height: 22px;
+    margin-left: 6px;
+  }
+  .casinos-popup__code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 2px dashed #878CA4;
+    border-radius: 4px;
+    font-family: "Roboto Bold";
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #5E6166;
+  }
+  .casinos-popup__line {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .casinos-popup__line + li {
+    margin-top: 10px;
+  }
+  .casinos-popup__name {
+    width: calc(40% - 5px);
+    margin-right: 5px;
+    font-size: 14px;
+    color: #878CA4;
+    line-height: 20px;
+  }
+  .casinos-popup__value {
+    display: inline-block;
+    width: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5E6166;
+  }
+  .casinos-popup__value.free {
+    text-transform: uppercase;
+    color: #58C25D;
+  }
