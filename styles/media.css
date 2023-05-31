@@ -3,6 +3,7 @@
     .casinos__card {
       justify-content: space-between;
       flex-wrap: wrap;
+      height: auto;
     }
     .casinos__btn {
       width: 60%;
